@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:contextClickable="false"
+        android:padding="15dp"
+    tools:context="info.isom.irrreebe.SettingActivity">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/setting_profile"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="19dp"
+           android:src="@drawable/defoult"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/setting_profile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp"
+            android:text="User name"
+            android:textColor="@android:color/background_light"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/settstustus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="user stutas "
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/setting_image_button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:padding="15dp"
+            android:text="chang image "
+            android:textSize="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/setting_stutas_button"
+            android:layout_alignStart="@+id/setting_stutas_button" />
+
+        <Button
+            android:id="@+id/setting_stutas_button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/setting_image_button"
+            android:layout_alignLeft="@+id/setting_profile"
+            android:layout_alignStart="@+id/setting_profile"
+            android:layout_marginBottom="11dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginStart="23dp"
+            android:text="changing status"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+
+

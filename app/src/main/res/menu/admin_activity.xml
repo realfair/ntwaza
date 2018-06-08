@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="info.isom.irrreebe.AdminActivity">
+    <item android:title="LOGOUT"
+        android:id="@+id/logout"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        tools:ignore="HardcodedText" />
+    <item android:title="NEW USER"
+        android:id="@+id/newUSER"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        tools:ignore="HardcodedText" />
+</menu>

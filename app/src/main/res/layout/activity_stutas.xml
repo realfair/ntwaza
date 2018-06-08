@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="info.isom.irrreebe.stutasActivity">
+        <include
+            layout="@layout/app_bar_layout"
+            android:id="@+id/Status_app_bar">
+
+
+        </include>
+
+        <EditText
+            android:id="@+id/stutas_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/Status_app_bar"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="16dp"
+            android:hint="changing stutatus"
+            android:padding="50dp" />
+
+        <Button
+            android:id="@+id/save_stutas_bar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/stutas_input"
+            android:layout_alignStart="@+id/stutas_input"
+            android:layout_below="@+id/stutas_input"
+            android:layout_marginLeft="44dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="43dp"
+            android:background="@android:color/holo_green_dark"
+            android:text=" SAVE "
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+
+
+

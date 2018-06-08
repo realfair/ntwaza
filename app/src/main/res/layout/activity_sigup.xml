@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/irreeb"
+    tools:context="info.isom.irrreebe.sigupActivity">
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/main_page_TopBar"></include>
+
+    <EditText
+        android:id="@+id/Register_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="first name lastname"
+        android:inputType="textMultiLine"
+        android:padding="15dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/main_page_TopBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="178dp" />
+
+    <EditText
+        android:id="@+id/Register_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/Register_name"
+        android:layout_marginTop="66dp"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/Register_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Register_email"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword|textVisiblePassword"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/createaccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create acount"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_below="@+id/Register_password"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
